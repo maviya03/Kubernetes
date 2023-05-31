@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: my-deployment
+spec: 
+   replicas: 10
+   selector: 
+      matchLabels:
+       app: wp
+   template:
+      metadata: 
+         name: sdlkj
+         labels: 
+            app: wp
+      spec: 
+          containers:
+             - name: lskgd
+               image: wordpress
+               ports:
+                  - containerPort: 80
+                    name: web-nginx
+
+
